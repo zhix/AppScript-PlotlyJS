@@ -2,7 +2,7 @@
 
 | Table of Contents | Description |
 | -------------- | -------------- |
-| - [Installation](#installation) <br> - [Usage](#usage) <br> - [Contributing](#contributing) <br> - [License](#license) <br> - [Credits](#credits) <br> - [Support](#support) <br> - [Acknowledgments](#acknowledgments) <br> - [Changelog](#changelog)  <br> - [FAQs](#faqs)  <br> - [Examples](#examples)  <br> - [Roadmap](#roadmap)  <br> - [Troubleshooting](#troubleshooting)  | This project builds a web app on Google Apps Script that pulls data from Google Sheet to a frontend HTML that displays graphs using [Plotly JS library](https://plotly.com/javascript/).|
+| - [Installation](#installation) <br> - [Usage](#usage) <br> - [Contributing](#contributing) <br> - [License](#license) <br> - [Credits](#credits--acknowledgments) <br> - [Support](#support) <br> - [Changelog](#changelog)  <br> - [FAQs](#faqs)  <br> - [Examples](#examples)  <br> - [Roadmap](#roadmap)  <br> - [Troubleshooting](#troubleshooting)  | This project builds a web app on Google Apps Script that pulls data from Google Sheet to a frontend HTML that displays graphs using [Plotly JS library](https://plotly.com/javascript/).|
 
 ## Installation
 No installation is required. You just need to start with Google Drive. 
@@ -41,9 +41,14 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 ## Credits & Acknowledgments
 We want to thank the following individuals, organizations, and resources for their inspiration and/or contributions to this project:
-* Chumbaka (link) - this project is initiated due to the need to display in a more sophisticated manner than your conventional graphing tool such as Google Sheet, Looker Studio, etc. 
+* [Chumbaka Asia](https://chumbaka.asia/)- this project is initiated due to the need to display graphs in a more sophisticated manner than your conventional graphing tool such as Google Sheet, Looker Studio, etc. 
+* [Get __it Done!](https://www.youtube.com/@get__itdone7958) 
+  * [google.script.run Web App - withSuccessHandler & withFailureHandler Callbacks](https://www.youtube.com/watch?v=ZRyxJZRlrWM)
+  * [Google Web App User Info Access & Deployment - Apps Script Tutorial](https://www.youtube.com/watch?v=wwDY9iJpmzo)
+  * [google.script.run replaced with JavaScript Promise API, Async & Await in a Web App
+](https://www.youtube.com/watch?v=x78cKSScFGY)
 * Libraries for providing a crucial library used in this project:
-  * [Canvas API - Quiz Stats](https://canvas.instructure.com/doc/api/quiz_statistics.html)
+  * Plotly
   * XXXXX
   * XXXX
 
@@ -58,4 +63,4 @@ For any questions or issues regarding the project, please refer to:
 Summary of changes for each version of the project, highlighting new features, bug fixes, and improvements.
 
 ## Examples 
-* Chumbaka Reporting Tool
+* [Chumbaka Report](https://script.google.com/a/macros/chumbaka.asia/s/AKfycbxew5PBE8KLSPOU45zNprhxEmFyUwUYnxI_4fkduVPTrrXAyOHlWRPq3w8ePcl2Y9NofQ/exec)
