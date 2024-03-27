@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js" charset="utf-8"></script>
+    <base target="_top">
+    <title> Webpage Title</title>
+    
+  </head>
+  <p>
+    Read more in details on <a href="https://github.com/zhix/AppScript-PlotlyJS">Github</a> 
+    <br />
+    Value in cell "A1" determind in code.gs: <?= tableData ?> 
+  </p>
+
+  <body>
+      <button id="btn"> Click to see the x data </button>
+      <p>Below is the graph.</p>
+      <div id="tester" style="width:600px;height:250px;"></div>
+
+  <script>
+
+    function runGoogleScript(serverFunctionName){
+      return new Promise ( (resolve,reject) => {
+        google.script.run.withSuccessHandler( data=>{
+          resolve(data)
+        }).withFailureHandler( er=>{
+          reject(er)
+        })[serverFunctionName]()
+      });
+    }
+
+    async function plotData() {
+      try {
+        const xData = await runGoogleScript("x");
+        const yData = await runGoogleScript("y");
+
+        Plotly.newPlot('tester', [{
+          x: xData,
+          y: yData
+        }], {
+          margin: { t: 0 }
+        });
+      } catch (error) {
+        alert(error);
+      }
+    }
+
+    plotData(); 
+
+    async function getxData() {
+        try {
+            const xData = await runGoogleScript("x");
+            alert("Here is the xData: " + xData) 
+        } catch (error) {
+            alert(error);
+        }
+    }
+
+
+    document.getElementById('btn').addEventListener('click',getxData);
+  </script>
+    
+  </body>
+</html>
