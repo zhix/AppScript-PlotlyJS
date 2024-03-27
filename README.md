@@ -13,11 +13,11 @@ There are 3 important files:
 * Code.gs - where the backend data-pulling magic happens 
 * index.html - where Plotly graph is displayed
 
-(1) Create x, y data on Google Sheet (example)
-(2) Open the Google Apps Script 
-(3) Copy the code into code.gs
-(4) Create index.html, and copy the lines of code inside 
-(5) Deploy the Apps Script as Web App 
+1. Create x, y data on Google Sheet (example)
+2. Open the Google Apps Script 
+3. Copy the code into code.gs
+1. Create index.html, and copy the lines of code inside 
+1. Deploy the Apps Script as Web App 
 
 Notes: 
 * You will need to authorise the app when deployed 
